@@ -6,17 +6,17 @@ const selectDir = document.getElementById("selectDir");
 const toCopy = document.getElementById("toCopy");
 
 leftInputColor.addEventListener("input", () => {
-	setGradient();
 	window.localStorage.setItem("left", leftInputColor.value);
+	setGradient();
 });
 rightInputColor.addEventListener("input", () => {
-	setGradient();
 	window.localStorage.setItem("right", rightInputColor.value);
+	setGradient();
 });
 
 selectDir.addEventListener("change", () => {
-	setGradient();
 	window.localStorage.setItem("direction", selectDir.value);
+	setGradient();
 });
 
 if (window.localStorage.getItem("left")) {
